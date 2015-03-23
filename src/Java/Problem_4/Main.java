@@ -2,15 +2,15 @@ package Problem_4;
 
 public class Main {
     public static void main(String[] args) {
-        int biggest_paslindrom = 0;
+        int biggestPaslindrom = 0;
         for (int i = 100; i < 999; i++) {
             for (int j = 100; j < 999; j++) {
                 if (isPalyndrom(i*j)) {
-                    if (i*j > biggest_paslindrom) biggest_paslindrom = i*j;
+                    if (i*j > biggestPaslindrom) biggestPaslindrom = i*j;
                 }
             }
         }
-        System.out.println(biggest_paslindrom);
+        System.out.println(biggestPaslindrom);
     }
 
     public static boolean isPalyndrom(int x) {

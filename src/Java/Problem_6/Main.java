@@ -6,8 +6,7 @@ public class Main {
     public static void main(String[] args) {
         int anwer = 0;
         for (int i = 1; i < 101; i++) {
-            int x = (int) getDifference(100);
-            anwer=x;
+            anwer= (int) getDifference(100);
         }
         System.out.println(anwer);
     }
