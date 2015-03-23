@@ -1,17 +1,20 @@
-package Problem_3;
+package Problem_10;
 
 public class Main {
-    public static long x = 600851475143l;
 
     public static void main(String[] args) {
-        for (long i = 0; i < x; i++) {
+        long answer = 0;
+        for (int i = 2000000; i > 1; i--) {
             if (isPrime(i)) {
-                if (x%i==0) System.out.println(i);
+                answer+=i;
+                System.out.println("i:" + i);
             }
         }
+        System.out.println(answer);
     }
 
-    public static boolean isPrime(long N) {
+
+    public static boolean isPrime(int N) {
         if (N < 2) return false;
         for (int i = 2; i*i <= N; i++)
             if (N % i == 0) return false;

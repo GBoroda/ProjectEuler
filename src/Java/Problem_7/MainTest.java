@@ -6,9 +6,9 @@ import org.junit.Test;
 public class MainTest {
 
     @Test
-    public void testIsSimple() throws Exception {
-        long x = 127;
-        Assert.assertTrue(Main.isSimple(x));
+    public void testIsPrime() throws Exception {
+        int x = 127;
+        Assert.assertTrue(Main.isPrime(x));
         boolean test = false;
         for (int i = 2; i < x; i++) {
             if (x%i==0) test=true;

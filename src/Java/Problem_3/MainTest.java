@@ -12,12 +12,4 @@ public class MainTest {
         Assert.assertFalse(Main.isPrime(25));
         Assert.assertFalse(Main.isPrime(100));
     }
-
-    @Test
-    public void testIsDelitsa() throws Exception {
-        Assert.assertTrue(Main.isDelitsa(71));
-        Assert.assertTrue(Main.isDelitsa(839));
-        Assert.assertFalse(Main.isDelitsa(33));
-        Assert.assertFalse(Main.isDelitsa(739));
-    }
 }

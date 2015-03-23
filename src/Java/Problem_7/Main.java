@@ -6,17 +6,16 @@ public class Main {
         int y;
 
         for (int i = 1;; i++) {
-            if (isSimple(i)) x++; y=i;
+            if (isPrime(i)) x++; y=i;
             System.out.println("X:" + x + " y:" + y);
             if (x==10001) break;
         }
     }
 
-    public static boolean isSimple(long x) {
-        int x1 = 0;
-        for (int i = 1; i <= x; i++) {
-            if (x%i==0) x1++;
-        }
-        return x1 == 2;
+    public static boolean isPrime(int N) {
+        if (N < 2) return false;
+        for (int i = 2; i*i <= N; i++)
+            if (N % i == 0) return false;
+        return true;
     }
 }
